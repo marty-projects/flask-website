@@ -1,7 +1,8 @@
-from flask import Flask, app 
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
+
 
 db= SQLAlchemy()
 DB_NAME = "database.db"
@@ -34,8 +35,6 @@ def create_app():
 
     return app
 
-def getApp():
-    return app
 
 
 
