@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask, app 
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
@@ -32,6 +32,9 @@ def create_app():
     with app.app_context():
         db.create_all()
 
+    return app
+
+def getApp():
     return app
 
 
